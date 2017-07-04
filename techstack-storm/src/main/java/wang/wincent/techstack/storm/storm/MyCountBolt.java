@@ -34,7 +34,7 @@ public class MyCountBolt extends BaseRichBolt{
         }else{
             map.put(w1,w2);
         }
-//      System.out.println(map);
+       System.out.println(map);
     }
 
     public void declareOutputFields(OutputFieldsDeclarer outputFieldsDeclarer) {
