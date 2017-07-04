@@ -12,6 +12,8 @@
         <module>techstack-zookeeper</module>
         <module>techstack-storm</module>
         <module>techstack-redis</module>
+        <module>techstack-canal</module>
+        <module>techstack-mq</module>
     </modules>
 
 
