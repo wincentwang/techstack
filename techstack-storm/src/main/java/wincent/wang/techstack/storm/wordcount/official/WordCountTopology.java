@@ -35,17 +35,13 @@ public class WordCountTopology {
 
         if ((args != null) && (args.length > 0)) {
             conf.setNumWorkers(3);
-
             StormSubmitter.submitTopologyWithProgressBar(args[0], conf, builder.createTopology());
         }
         else {
             conf.setMaxTaskParallelism(3);
-
             LocalCluster cluster = new LocalCluster();
             cluster.submitTopology("word-count", conf, builder.createTopology());
-
             Thread.sleep(10000L);
-
             cluster.shutdown();
         }
     }

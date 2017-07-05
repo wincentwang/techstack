@@ -22,7 +22,7 @@ public class MySpout extends BaseRichSpout{
 
     //storm 框架在while(true) 调用nextTuple
     public void nextTuple() {
-        collector.emit(new Values("Name:Wincent.Wang Webstie:http://wincent.wang"));
+        collector.emit(new Values("the cow jumped over the moon"));
     }
 
     public void declareOutputFields(OutputFieldsDeclarer outputFieldsDeclarer) {

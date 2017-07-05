@@ -30,7 +30,6 @@ public class RandomSentenceSpout  extends BaseRichSpout {
     {
         Utils.sleep(100L);
         String[] sentences = { "the cow jumped over the moon", "an apple a day keeps the doctor away", "four score and seven years ago", "snow white and the seven dwarfs", "i am at two with nature" };
-
         String sentence = sentences[this._rand.nextInt(sentences.length)];
         this._collector.emit(new Values(new Object[] { sentence }));
     }
