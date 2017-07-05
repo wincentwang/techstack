@@ -1,4 +1,4 @@
-package wang.wincent.techstack.storm.storm;
+package wang.wincent.techstack.storm.wordcount.imitate;
 
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;

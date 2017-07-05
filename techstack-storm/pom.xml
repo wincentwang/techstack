@@ -29,7 +29,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>wang.wincent.techstack.storm.WordCountTopologMain</mainClass>
+                            <mainClass>wang.wincent.techstack.storm.wordcount.imitate.WordCountTopologyMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

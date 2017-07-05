@@ -1,8 +1,7 @@
-package wang.wincent.techstack.storm.storm;
+package wang.wincent.techstack.storm.wordcount.imitate;
 
 import backtype.storm.Config;
 import backtype.storm.LocalCluster;
-import backtype.storm.StormSubmitter;
 import backtype.storm.generated.AlreadyAliveException;
 import backtype.storm.generated.InvalidTopologyException;
 import backtype.storm.topology.TopologyBuilder;
@@ -12,7 +11,7 @@ import backtype.storm.tuple.Fields;
  * Created by user on 6/28/2017.
  */
 
-public class WordCountTopologMain {
+public class WordCountTopologyMain {
 
     public static void main(String[] args) throws AlreadyAliveException, InvalidTopologyException {
 
