@@ -1,4 +1,4 @@
-package wincent.wang.techstack.storm.wordcount.official;
+package wang.wincent.techstack.storm.wordcount.official;
 
 import backtype.storm.spout.SpoutOutputCollector;
 import backtype.storm.task.TopologyContext;
