@@ -14,7 +14,6 @@ public class MyAckFailTopology {
         TopologyBuilder topologyBuilder = new TopologyBuilder();
         topologyBuilder.setSpout("mySpout", new MySpout(), 1);
         topologyBuilder.setBolt("mybolt1", new MyBolt1(), 1).shuffleGrouping("mySpout");
-
         Config conf = new Config();
         String name = MyAckFailTopology.class.getSimpleName();
         if (args != null && args.length > 0) {

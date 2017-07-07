@@ -23,14 +23,13 @@ public class WordCountTopologyMain {
         topologyBuilder.setBolt("mySplitBolt1", new MySpiltBolt(), 4).shuffleGrouping("mySpout");
         topologyBuilder.setBolt("myCountBolt2", new MyCountBolt(), 2).fieldsGrouping("mySplitBolt1", new Fields("word"));
 
-
         //2，创建一个configuration，用来指定当前Topology需要Worker的数量
         Config cfg = new Config();
         cfg.setNumWorkers(2);
 
         //3，提交任务 两种模式，本地模式和集群模式
         //集群模式
-//        StormSubmitter.submitTopology("MyWordCount", cfg, topologyBuilder.createTopology());
+        //StormSubmitter.submitTopology("MyWordCount", cfg, topologyBuilder.createTopology());
 
         //本地模式
         LocalCluster lc=new LocalCluster();
