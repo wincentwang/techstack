@@ -19,7 +19,7 @@ public class SimpleKafkaProducer {
          *  创建topic可以输入以下命令，在kafka集群的任一节点进行创建。
          *  bin/kafka-topics.sh --create --zookeeper zk01:2181 --replication-factor 1 --partitions 1 --topic test
          */
-        String TOPIC = "orderMq";
+        String TOPIC = "Wincent";
         /**
          * 2、读取配置文件
          */
@@ -58,21 +58,21 @@ public class SimpleKafkaProducer {
          * 4、通过for循环生产数据
          */
         for (int messageNo = 1; messageNo < 100000; messageNo++) {
-//            String messageStr = new String(messageNo + "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
-//                    "用来配合自定义的MyLogPartitioner进行数据分发");
+            String messageStr = new String(messageNo + "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发" +
+                    "用来配合自定义的MyLogPartitioner进行数据分发");
 
             /**
              * 5、调用producer的send方法发送数据
              * 注意：这里需要指定 partitionKey，用来配合自定义的MyLogPartitioner进行数据分发
              */
-            producer.send(new KeyedMessage<String, String>(TOPIC, messageNo + "", "appid" + UUID.randomUUID() + "itcast"));
+            producer.send(new KeyedMessage<String, String>(TOPIC, messageNo + "", "appid" + UUID.randomUUID() + messageStr));
         }
     }
 
