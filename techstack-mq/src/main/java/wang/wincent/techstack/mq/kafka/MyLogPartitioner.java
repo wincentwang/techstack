@@ -13,8 +13,8 @@ public class MyLogPartitioner implements Partitioner {
     }
 
     public int partition(Object obj, int numPartitions) {
-        //return Integer.parseInt(obj.toString())%numPartitions;
-        return 1;
+        return Integer.parseInt(obj.toString()) % numPartitions;
+//        return 1;
     }
 
 }

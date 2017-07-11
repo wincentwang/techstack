@@ -48,12 +48,12 @@ public class SimpleKafkaConsumer implements Runnable {
     public static void main(String[] args) throws Exception{
         Properties props = new Properties();
         props.put("group.id", "dashujujiagoushi");
-        props.put("zookeeper.connect", "zk1:2181,zk2:2181,zk3:2181");
+        props.put("zookeeper.connect", "hadoop1:2181,hadoop2:2181,hadoop3:2181");
         props.put("auto.offset.reset", "largest");
         props.put("auto.commit.interval.ms", "1000");
         props.put("partition.assignment.strategy", "roundrobin");
         ConsumerConfig config = new ConsumerConfig(props);
-        String topic1 = "orderMq";
+        String topic1 = "Wincent";
         String topic2 = "paymentMq";
         //只要ConsumerConnector还在的话，consumer会一直等待新消息，不会自己退出
         ConsumerConnector consumerConn = Consumer.createJavaConsumerConnector(config);
@@ -65,7 +65,7 @@ public class SimpleKafkaConsumer implements Runnable {
         //取出 `kafkaTest` 对应的 streams
         List<KafkaStream<byte[], byte[]>> streams = topicStreamsMap.get(topic1);
         //创建一个容量为4的线程池
-        ExecutorService executor = Executors.newFixedThreadPool(3);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
         //创建20个consumer threads
         for (int i = 0; i < streams.size(); i++)
             executor.execute(new SimpleKafkaConsumer("消费者" + (i + 1), streams.get(i)));
