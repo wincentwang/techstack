@@ -14,6 +14,7 @@
         <module>techstack-redis</module>
         <module>techstack-canal</module>
         <module>techstack-mq</module>
+        <module>techstack-nosql</module>
     </modules>
 
 

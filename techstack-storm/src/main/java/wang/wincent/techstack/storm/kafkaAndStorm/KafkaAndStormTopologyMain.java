@@ -14,7 +14,7 @@ public class KafkaAndStormTopologyMain {
         TopologyBuilder topologyBuilder = new TopologyBuilder();
         topologyBuilder.setSpout("kafkaSpout",
                 new KafkaSpout(new SpoutConfig(
-                        new ZkHosts("zk01:2181,zk02:2181,zk03:2181"),
+                        new ZkHosts("zk1:2181,zk2:2181,zk3:2181"),
                         "orderMq",
                         "/myKafka",
                         "kafkaSpout")),1);
