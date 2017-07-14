@@ -14,8 +14,6 @@ public class StringMain {
         Jedis jedis = new Jedis("192.168.244.100", 6379);
         jedis.auth("123456");
 
-
-
         //操作一个String字符串
         jedis.set("name", "liudehua"); //插入一个名字，叫做刘德华
         System.out.println(jedis.get("name")); //读取一个名字
