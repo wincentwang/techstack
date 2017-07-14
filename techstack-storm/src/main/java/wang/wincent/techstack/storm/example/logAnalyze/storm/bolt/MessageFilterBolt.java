@@ -6,8 +6,9 @@ import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
-import logAnalyze.storm.domain.LogMessage;
-import logAnalyze.storm.utils.LogAnalyzeHandler;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogMessage;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.utils.LogAnalyzeHandler;
+
 
 /**
  * Describe: 请补充类描述

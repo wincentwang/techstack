@@ -4,8 +4,9 @@ import backtype.storm.topology.BasicOutputCollector;
 import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Tuple;
-import logAnalyze.storm.domain.LogMessage;
-import logAnalyze.storm.utils.LogAnalyzeHandler;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogMessage;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.utils.LogAnalyzeHandler;
+
 
 /**
  * Describe:

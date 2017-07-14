@@ -1,9 +1,11 @@
 package wang.wincent.techstack.storm.example.logAnalyze.app.callback;
 
 
-import logAnalyze.app.domain.BaseRecord;
-import logAnalyze.storm.dao.LogAnalyzeDao;
-import logAnalyze.storm.utils.DateUtils;
+
+
+import wang.wincent.techstack.storm.example.logAnalyze.app.domain.BaseRecord;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.dao.LogAnalyzeDao;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.utils.DateUtils;
 
 import java.util.Calendar;
 import java.util.List;

@@ -6,11 +6,12 @@ import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
-import logMonitor.domain.Message;
-import logMonitor.domain.Record;
-import logMonitor.utils.MonitorHandler;
+
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.log4j.Logger;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Message;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Record;
+import wang.wincent.techstack.storm.example.logMonitor.utils.MonitorHandler;
 
 /**
  * Describe: 将触发信息保存到mysql数据库中

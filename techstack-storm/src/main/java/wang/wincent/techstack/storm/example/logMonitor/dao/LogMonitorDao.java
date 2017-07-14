@@ -1,12 +1,12 @@
 package wang.wincent.techstack.storm.example.logMonitor.dao;
 
-import logMonitor.domain.App;
-import logMonitor.domain.Record;
-import logMonitor.domain.Rule;
-import logMonitor.domain.User;
 import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import wang.wincent.techstack.storm.example.logMonitor.domain.App;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Record;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Rule;
+import wang.wincent.techstack.storm.example.logMonitor.domain.User;
 
 import java.util.Date;
 import java.util.List;

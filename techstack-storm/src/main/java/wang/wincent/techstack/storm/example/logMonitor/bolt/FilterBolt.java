@@ -7,9 +7,9 @@ import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
-import logMonitor.domain.Message;
-import logMonitor.utils.MonitorHandler;
 import org.apache.log4j.Logger;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Message;
+import wang.wincent.techstack.storm.example.logMonitor.utils.MonitorHandler;
 
 import java.util.Map;
 

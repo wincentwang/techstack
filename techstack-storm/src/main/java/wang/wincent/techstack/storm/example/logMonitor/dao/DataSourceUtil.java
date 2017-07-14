@@ -1,9 +1,9 @@
 package wang.wincent.techstack.storm.example.logMonitor.dao;
 
-import logMonitor.domain.Record;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Record;
 
 import javax.sql.DataSource;
 import java.util.Date;

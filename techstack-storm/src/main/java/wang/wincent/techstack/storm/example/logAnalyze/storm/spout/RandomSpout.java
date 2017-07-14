@@ -8,7 +8,7 @@ import backtype.storm.topology.base.BaseRichSpout;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
 import com.google.gson.Gson;
-import logAnalyze.storm.domain.LogMessage;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogMessage;
 
 import java.util.ArrayList;
 import java.util.List;

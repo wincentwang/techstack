@@ -1,12 +1,13 @@
 package wang.wincent.techstack.storm.example.logAnalyze.storm.utils;
 
 import com.google.gson.Gson;
-import logAnalyze.storm.constant.LogTypeConstant;
-import logAnalyze.storm.dao.LogAnalyzeDao;
-import logAnalyze.storm.domain.LogAnalyzeJob;
-import logAnalyze.storm.domain.LogAnalyzeJobDetail;
-import logAnalyze.storm.domain.LogMessage;
+
 import redis.clients.jedis.ShardedJedis;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.constant.LogTypeConstant;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.dao.LogAnalyzeDao;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogAnalyzeJob;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogAnalyzeJobDetail;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogMessage;
 
 import java.util.ArrayList;
 import java.util.HashMap;

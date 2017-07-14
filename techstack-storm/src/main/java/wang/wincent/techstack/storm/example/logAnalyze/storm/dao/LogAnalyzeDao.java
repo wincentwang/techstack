@@ -1,12 +1,13 @@
 package wang.wincent.techstack.storm.example.logAnalyze.storm.dao;
 
-import logAnalyze.app.domain.BaseRecord;
-import logAnalyze.storm.domain.LogAnalyzeJob;
-import logAnalyze.storm.domain.LogAnalyzeJobDetail;
+
 import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ParameterizedPreparedStatementSetter;
+import wang.wincent.techstack.storm.example.logAnalyze.app.domain.BaseRecord;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogAnalyzeJob;
+import wang.wincent.techstack.storm.example.logAnalyze.storm.domain.LogAnalyzeJobDetail;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

@@ -4,9 +4,9 @@ import backtype.storm.topology.BasicOutputCollector;
 import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Tuple;
-import logMonitor.domain.Record;
-import logMonitor.utils.MonitorHandler;
 import org.apache.log4j.Logger;
+import wang.wincent.techstack.storm.example.logMonitor.domain.Record;
+import wang.wincent.techstack.storm.example.logMonitor.utils.MonitorHandler;
 
 /**
  * Describe: 请补充类描述
