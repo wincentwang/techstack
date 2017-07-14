@@ -7,7 +7,7 @@ import backtype.storm.topology.base.BaseRichSpout;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
 import backtype.storm.utils.Utils;
-import storm.tmall.other.PaymentInfo;
+import wang.wincent.techstack.nosql.redis.storm.tmall.other.PaymentInfo;
 
 import java.util.Map;
 

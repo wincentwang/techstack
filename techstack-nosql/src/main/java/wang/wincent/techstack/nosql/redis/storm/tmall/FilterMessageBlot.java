@@ -8,7 +8,7 @@ import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
 import com.google.gson.Gson;
-import storm.tmall.other.PaymentInfo;
+import wang.wincent.techstack.nosql.redis.storm.tmall.other.PaymentInfo;
 
 import java.util.Calendar;
 import java.util.Date;

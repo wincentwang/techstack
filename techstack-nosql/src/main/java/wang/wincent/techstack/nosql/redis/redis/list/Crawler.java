@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 public class Crawler {
+
     //定义需要爬取的url list
     private static final String redisUrlsWillKey = "crawler:urls:will";
     //如果需要去重的话，可以使用set保存已经爬起过的url

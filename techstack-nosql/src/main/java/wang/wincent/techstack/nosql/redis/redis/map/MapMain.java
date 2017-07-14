@@ -22,9 +22,9 @@ public class MapMain {
         Map<String, String> jingzhongyue = jedis.hgetAll("daxia:jingzhongyue");
         System.out.println("hgetAll  大侠的基本信息：");
         for (Map.Entry entry : jingzhongyue.entrySet()) {
-                    System.out.println(entry.getKey() + "：-----------------" + entry.getValue());
-    }
-    System.out.println();
+            System.out.println(entry.getKey() + "：-----------------" + entry.getValue());
+        }
+        System.out.println();
 
         //获取大侠的所有字段信息
         Set<String> fields = jedis.hkeys("daxia:jingzhongyue");
@@ -35,7 +35,7 @@ public class MapMain {
         System.out.println();
         //获取大侠的所有值的信息
         List<String> values = jedis.hvals("daxia:jingzhongyue");
-        System.out.println("hvals " );
+        System.out.println("hvals ");
         for (String value : values) {
             System.out.print(value + "  ");
         }

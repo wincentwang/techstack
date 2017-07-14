@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
-import storm.tmall.other.PaymentInfo;
+import wang.wincent.techstack.nosql.redis.storm.tmall.other.PaymentInfo;
 
 import java.util.Map;
 

@@ -11,7 +11,10 @@ public class StringMain {
 
     public static void main(String[] args) throws InterruptedException {
         //创建Jedis客户端
-        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        Jedis jedis = new Jedis("192.168.244.100", 6379);
+        jedis.auth("123456");
+
+
 
         //操作一个String字符串
         jedis.set("name", "liudehua"); //插入一个名字，叫做刘德华
