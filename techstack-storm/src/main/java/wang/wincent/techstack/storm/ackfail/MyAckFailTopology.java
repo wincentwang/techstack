@@ -5,9 +5,7 @@ import backtype.storm.LocalCluster;
 import backtype.storm.StormSubmitter;
 import backtype.storm.topology.TopologyBuilder;
 
-/**
- * Created by maoxiangyi on 2016/4/25.
- */
+
 public class MyAckFailTopology {
 
     public static void main(String[] args) throws Exception {

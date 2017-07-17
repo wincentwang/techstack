@@ -2,8 +2,6 @@ package wang.wincent.techstack.storm.example.orderMonitor.constant;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/24.
  */
 public class RedisConstant {

@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  * Describe: 计算每小时的增量数据
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class HourAppendCallBack implements Runnable {

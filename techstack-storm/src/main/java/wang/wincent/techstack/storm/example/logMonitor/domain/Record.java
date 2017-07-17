@@ -2,8 +2,6 @@ package wang.wincent.techstack.storm.example.logMonitor.domain;
 
 /**
  * Describe: 触发报警之后的记录
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/11.
  */
 public class Record {

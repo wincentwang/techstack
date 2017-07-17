@@ -1,19 +1,17 @@
 package wang.wincent.techstack.storm.example.orderMonitor.utils;
 
-import orderMonitor.constant.RedisConstant;
-import orderMonitor.constant.RuleField;
-import orderMonitor.domain.Condition;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.domain.Product;
+
 import redis.clients.jedis.ShardedJedis;
+import wang.wincent.techstack.storm.example.orderMonitor.constant.RedisConstant;
+import wang.wincent.techstack.storm.example.orderMonitor.constant.RuleField;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Condition;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Product;
 
 import java.util.List;
 
 /**
  * Describe: 规则匹配核心类
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
- * Data:     2015/11/23.
  */
 public class ConditionMatch {
     public static boolean match(PaymentInfo paymentInfo, List<Condition> conditionList) {

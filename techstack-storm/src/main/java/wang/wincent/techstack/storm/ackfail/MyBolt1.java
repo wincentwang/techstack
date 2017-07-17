@@ -10,9 +10,6 @@ import backtype.storm.tuple.Values;
 
 import java.util.Map;
 
-/**
- * Created by maoxiangyi on 2016/4/25.
- */
 public class MyBolt1 extends BaseRichBolt {
     private OutputCollector collector;
 

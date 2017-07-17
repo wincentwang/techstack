@@ -5,9 +5,7 @@ package wang.wincent.techstack.storm.example.logMonitor.mail;
  * <p/>
  * <p/>
  * ----------------------------
- * 姓名：毛祥溢
- * 邮箱：sendmail2mao@gmail.com
- * 网站：www.maoxiangyi.cn
+
  */
 public class MailCenterConstant {
     public final static String PROTOCOL = "smtp";

@@ -13,8 +13,6 @@ import java.util.concurrent.Callable;
 
 /**
  * Describe: 计算每半个小时的数据
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class HalfAppendCallBack implements Runnable {

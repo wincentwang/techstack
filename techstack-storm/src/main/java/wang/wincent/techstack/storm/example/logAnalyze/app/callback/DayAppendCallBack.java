@@ -10,8 +10,6 @@ import java.util.List;
 
 /**
  * Describe: 计算每天的全量数据
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class DayAppendCallBack implements Runnable{

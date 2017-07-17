@@ -4,15 +4,14 @@ import backtype.storm.topology.BasicOutputCollector;
 import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Tuple;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.utils.OrderMonitorHandler;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.utils.OrderMonitorHandler;
+
 
 import java.util.List;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/23.
  */
 public class SaveInfo2DB extends BaseBasicBolt {

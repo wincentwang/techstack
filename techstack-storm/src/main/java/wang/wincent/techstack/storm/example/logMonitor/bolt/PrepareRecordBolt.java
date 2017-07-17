@@ -15,8 +15,6 @@ import wang.wincent.techstack.storm.example.logMonitor.utils.MonitorHandler;
 
 /**
  * Describe: 将触发信息保存到mysql数据库中
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/11.
  */
 //BaseRichBolt 需要手动调ack方法，BaseBasicBolt由storm框架自动调ack方法

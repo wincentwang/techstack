@@ -1,17 +1,14 @@
 package wang.wincent.techstack.storm.example.logAnalyze.app;
 
 
-import logAnalyze.app.callback.DayAppendCallBack;
-import logAnalyze.app.callback.HalfAppendCallBack;
-import logAnalyze.app.callback.HourAppendCallBack;
-import logAnalyze.app.callback.OneMinuteCallBack;
+
+
+import wang.wincent.techstack.storm.example.logAnalyze.app.callback.OneMinuteCallBack;
 
 import java.util.concurrent.*;
 
 /**
  * Describe: 计算每个指标每分钟的增量数据
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class ReportDataWorker {

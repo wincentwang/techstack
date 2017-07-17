@@ -36,8 +36,6 @@ import wang.wincent.techstack.storm.example.orderMonitor.bolt.SaveInfo2DB;
  * 1，订单mq进来之后，对mq进行解析并校验所有的基础属性，生成一个规则结果数据
  * 2，对结果数据进行判断，生成触发规则的信息
  * 3，将触发规则信息回写到数据库
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/16.
  */
 public class OrderMonitorTopologyMain {

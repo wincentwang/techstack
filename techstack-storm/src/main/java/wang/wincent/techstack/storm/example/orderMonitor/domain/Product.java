@@ -4,9 +4,6 @@ import java.math.BigDecimal;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
- * Data:     2015/11/24.
  */
 public class Product {
     private String id;//商品编号

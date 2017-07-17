@@ -1,13 +1,14 @@
 package wang.wincent.techstack.storm.example.orderMonitor.dao;
 
-import orderMonitor.domain.Condition;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.domain.Product;
-import orderMonitor.domain.Trigger;
-import orderMonitor.utils.DataSourceUtil;
+
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ParameterizedPreparedStatementSetter;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Condition;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Product;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Trigger;
+import wang.wincent.techstack.storm.example.orderMonitor.utils.DataSourceUtil;
 
 import java.math.BigDecimal;
 import java.sql.PreparedStatement;
@@ -18,8 +19,6 @@ import java.util.List;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/25.
  */
 public class OrderMonitorDao {

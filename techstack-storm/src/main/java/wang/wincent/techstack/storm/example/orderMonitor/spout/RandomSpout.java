@@ -6,8 +6,9 @@ import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseRichSpout;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.domain.Product;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Product;
+
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class RandomSpout extends BaseRichSpout {
         this.collector = collector;
         list = new ArrayList();
 
-        List<Product> products = new ArrayList<>();
+        List<Product> products = new ArrayList<Product>();
         //String id, String name, BigDecimal price, String catagory, long promotion, int num
         products.add(new Product("42077920512", "iphone6手机壳4.7透明超薄硅胶6s苹果", new BigDecimal(10), "配件", new BigDecimal(5.2), 1));
         products.add(new Product("42077920513", "iphone6钢化玻璃膜6s苹果6钢化保护", new BigDecimal(14), "配件", new BigDecimal(8), 1));

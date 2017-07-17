@@ -155,6 +155,11 @@
             <artifactId>spring-context</artifactId>
             <version>4.2.0.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>wang.wincent.techstack</groupId>
+            <artifactId>techstack-nosql</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

@@ -6,8 +6,8 @@ import backtype.storm.topology.base.BaseBasicBolt;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.utils.OrderMonitorHandler;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.utils.OrderMonitorHandler;
 
 import java.util.ArrayList;
 import java.util.List;

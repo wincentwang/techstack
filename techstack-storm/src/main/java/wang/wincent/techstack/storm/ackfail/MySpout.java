@@ -12,9 +12,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 
-/**
- * Created by maoxiangyi on 2016/4/25.
- */
+
 public class MySpout extends BaseRichSpout {
     private SpoutOutputCollector collector;
     private Random rand;

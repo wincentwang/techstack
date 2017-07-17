@@ -13,8 +13,6 @@ import java.util.*;
 
 /**
  * Describe: 计算每分钟的增量信息
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class OneMinuteCallBack implements Runnable {

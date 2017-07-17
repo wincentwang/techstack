@@ -8,8 +8,6 @@ import java.util.Map;
 /**
  * Describe: 缓存上一分钟的数据，用来做cache
  * 整点的时候，cache层中的数据，需要清理掉
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
  * Data:     2015/11/17.
  */
 public class CacheData {

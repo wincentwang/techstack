@@ -1,17 +1,15 @@
 package wang.wincent.techstack.storm.example.orderMonitor.utils;
 
-import orderMonitor.dao.OrderMonitorDao;
-import orderMonitor.domain.Condition;
-import orderMonitor.domain.PaymentInfo;
-import orderMonitor.domain.Trigger;
+
+import wang.wincent.techstack.storm.example.orderMonitor.dao.OrderMonitorDao;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Condition;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.PaymentInfo;
+import wang.wincent.techstack.storm.example.orderMonitor.domain.Trigger;
 
 import java.util.*;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
- * Data:     2015/11/23.
  */
 public class OrderMonitorHandler {
 

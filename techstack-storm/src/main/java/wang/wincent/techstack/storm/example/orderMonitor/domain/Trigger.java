@@ -2,9 +2,6 @@ package wang.wincent.techstack.storm.example.orderMonitor.domain;
 
 /**
  * Describe: 请补充类描述
- * Author:   maoxiangyi
- * Domain:   www.itcast.cn
- * Data:     2015/11/24.
  */
 public class Trigger {
     private String orderId;
