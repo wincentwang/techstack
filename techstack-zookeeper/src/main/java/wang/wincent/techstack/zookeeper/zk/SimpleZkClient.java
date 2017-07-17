@@ -24,7 +24,6 @@ public class SimpleZkClient {
     public void init() throws Exception {
         System.out.println("init");
         zkClient = new ZooKeeper(connectString, sessionTimeout, new Watcher() {
-            @Override
             public void process(WatchedEvent event) {
                 System.out.println("-----Connected");
 

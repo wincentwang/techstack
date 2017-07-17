@@ -2,7 +2,6 @@ package wang.wincent.techstack.zookeeper.curator;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.framework.api.GetChildrenBuilder;
 import org.apache.curator.retry.RetryNTimes;
 
 /**

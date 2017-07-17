@@ -41,6 +41,7 @@ public class MyShardedJedisPool {
     }
 
     public static ShardedJedis getResource() {
+
         return shardedJedisPool.getResource();
     }
 
