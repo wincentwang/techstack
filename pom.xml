@@ -15,7 +15,9 @@
         <module>techstack-canal</module>
         <module>techstack-mq</module>
         <module>techstack-nosql</module>
+        <module>techstack-threadio</module>
     </modules>
+
 
 
 
