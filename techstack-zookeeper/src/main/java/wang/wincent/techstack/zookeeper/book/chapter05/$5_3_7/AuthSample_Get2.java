@@ -10,8 +10,7 @@ public class AuthSample_Get2 {
 
         ZooKeeper zookeeper1 = new ZooKeeper("domain1.book.zookeeper:2181",5000,null);
         zookeeper1.addAuthInfo("digest", "foo:true".getBytes());
-        zookeeper1.create( PATH, "init".getBytes(), //
-        		           Ids.CREATOR_ALL_ACL, CreateMode.EPHEMERAL );
+        zookeeper1.create( PATH, "init".getBytes(), Ids.CREATOR_ALL_ACL, CreateMode.EPHEMERAL );
         
         ZooKeeper zookeeper2 = new ZooKeeper("domain1.book.zookeeper:2181",50000,null);
         zookeeper2.addAuthInfo("digest", "foo:true".getBytes());
@@ -20,5 +19,6 @@ public class AuthSample_Get2 {
         ZooKeeper zookeeper3 = new ZooKeeper("domain1.book.zookeeper:2181",50000,null);
         zookeeper3.addAuthInfo("digest", "foo:false".getBytes());
         zookeeper3.getData( PATH, false, null );
+
     }
 }

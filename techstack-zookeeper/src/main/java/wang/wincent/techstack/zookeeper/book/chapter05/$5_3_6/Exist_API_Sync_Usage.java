@@ -14,26 +14,18 @@ public class Exist_API_Sync_Usage implements Watcher {
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
     private static ZooKeeper zk;
     public static void main(String[] args) throws Exception {
-
     	String path = "/zk-book";
     	zk = new ZooKeeper("domain1.book.zookeeper:2181", 
 				5000, //
 				new Exist_API_Sync_Usage());
     	connectedSemaphore.await();
-
     	zk.exists( path, true );
-    	
     	zk.create( path, "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT );
-    	
     	zk.setData( path, "123".getBytes(), -1 );
-    	
-    	zk.create( path+"/c1", "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT );
-    	
-    	zk.delete( path+"/c1", -1 );
-    	
-    	zk.delete( path, -1 );
-    	
-        Thread.sleep( Integer.MAX_VALUE );
+    	zk.create(path+"/c1", "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT );
+    	zk.delete(path+"/c1", -1 );
+    	zk.delete(path,-1 );
+        Thread.sleep(Integer.MAX_VALUE);
     }
 
     @Override

@@ -31,11 +31,9 @@ public class ShardedJedisPoolDemo {
         try {
             // 从连接池中获取到jedis分片对象
             shardedJedis = shardedJedisPool.getResource();
-            
 //            for (int i = 0; i < 100; i++) {
 //                shardedJedis.set("mytest_"+i, "456" + i);
 //            }
-            
             // 从redis中获取数据
             String value = shardedJedis.get("mytest_40");
             System.out.println(value);
