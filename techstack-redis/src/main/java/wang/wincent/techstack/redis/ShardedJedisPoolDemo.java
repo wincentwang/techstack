@@ -19,12 +19,10 @@ public class ShardedJedisPoolDemo {
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         // 设置最大连接数
         poolConfig.setMaxTotal(50);
-
         // 定义集群信息
         List<JedisShardInfo> shards = new ArrayList<JedisShardInfo>();
         shards.add(new JedisShardInfo("127.0.0.1", 6379));
         shards.add(new JedisShardInfo("127.0.0.1", 6380));
-
         // 定义集群连接池
         ShardedJedisPool shardedJedisPool = new ShardedJedisPool(poolConfig, shards);
         ShardedJedis shardedJedis = null;
